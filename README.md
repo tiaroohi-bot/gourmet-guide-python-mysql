@@ -1,65 +1,66 @@
 # 🍽️ Gourmet Guide – Food Recommendation System
 
+> A Python + MySQL CLI-based application for exploring food and beverages using search, filtering, and recommendations.
+
+---
+
 ## 📌 Overview
 
-Gourmet Guide is an interactive Python and MySQL-based application that allows users to explore food and beverage options based on flavor preferences. It includes features like search, filtering, CRUD operations, and random recommendations.
+Gourmet Guide allows users to discover recipes based on flavor preferences (Sweet, Salty, Spicy, Sour) with powerful features like search, filtering, and full CRUD operations.
 
 ---
 
 ## 🚀 Features
 
-* Flavor-based filtering (Sweet, Salty, Spicy, Sour)
-* Search recipes by name
-* Filter by food or beverage
-* Add, update, and delete items (CRUD operations)
-* Random recommendation system
-* View all items in database
-* Interactive CLI interface
+* 🔎 Search recipes by name
+* 🍽️ Filter by food or beverage
+* 🌶️ Flavor-based categorization
+* 🎯 Random recommendation system
+* ✏️ Add, update, and delete items (CRUD)
+* 📋 View all items in database
 
 ---
 
 ## 🛠️ Tech Stack
 
-* Python
-* MySQL
-* PyMySQL
+* **Python**
+* **MySQL**
+* **PyMySQL**
 
 ---
 
 ## 🗄️ Database Design
 
-Uses a single optimized table:
+**Table: MenuItems**
 
-**MenuItems**
-
-* id
-* flavor
-* item_type
-* name
-* ingredients
-* recipe
-* nutrition
-* fun_fact
+| Field       | Description                  |
+| ----------- | ---------------------------- |
+| id          | Primary key                  |
+| flavor      | Sweet / Salty / Spicy / Sour |
+| item_type   | Food / Beverage              |
+| name        | Item name                    |
+| ingredients | Ingredients list             |
+| recipe      | Preparation steps            |
+| nutrition   | Nutritional info             |
+| fun_fact    | Interesting fact             |
 
 ---
 
 ## ▶️ How to Run
 
-1. Install dependency:
-
 ```bash
 pip install pymysql
 ```
 
-2. Ensure MySQL is running
+Ensure MySQL is running.
 
-3. Update credentials in code:
+Set your password (recommended using environment variable):
 
-```python
-DB_PASSWORD = "your_mysql_password"
+```bash
+export DB_PASSWORD=your_mysql_password
 ```
 
-4. Run:
+Run the program:
 
 ```bash
 python main.py
@@ -69,7 +70,7 @@ python main.py
 
 ## 💡 Learning Outcomes
 
-* Database design and normalization
+* Database normalization and design
 * Python–MySQL integration
 * CRUD operations
 * CLI-based application development
@@ -79,4 +80,4 @@ python main.py
 
 ## 👩‍💻 Author
 
-Tia Ahuja
+**Tia Ahuja**
